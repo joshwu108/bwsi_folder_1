@@ -20,12 +20,13 @@ for iter in range(20):
         yn = y_true[p]
 
         # forward pass
-        y = w*x
-        print(y)
+        y = np.dot(x, w)
         # backward pass
-        #dSdy = ()
-       # dydw = # student code goes here
-       # dSdw = dSdy * dydw
+        dSdy = (y - y_true[p])/5
+        dydw = x
+        dSdw = dSdy * dydw
 
         # update w
-       # w = w - alpha * dSdw
+        w = w - alpha * dSdw
+        print(w)
+    
