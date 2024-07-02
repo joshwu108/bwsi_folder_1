@@ -1,3 +1,1 @@
-This is my first time on github
-
-I like mushrooms
+Documenting my endeavors at learning about machine learning!
